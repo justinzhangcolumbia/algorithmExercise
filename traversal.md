@@ -84,6 +84,7 @@ private void traverse(TreeNode root, ArrayList<Integer> result) {
 postorder traversal
 ----
 1. Non-Recursion
+one stack solution(时间复杂度O(n)，空间复杂度是O(h), h是Tree的高度)
 ```
 public ArrayList<Integer> postorderTraversal(TreeNode root) {
     ArrayList<Integer> result = new ArrayList<Integer>();
@@ -117,6 +118,33 @@ public ArrayList<Integer> postorderTraversal(TreeNode root) {
 
     return result;
 }
+```
+two stack solution(时间复杂度相同，空间复杂度是O(n))
+```
+public ArrayList<Integer> postorderTraversal(TreeNode root) {
+    ArrayList<Integer> result = new ArrayList<Integer>();
+    Stack<TreeNode> stack1 = new Stack<TreeNode>();
+    Stack<TreeNode> stack1 = new Stack<TreeNode>();
+    if (root == null) {
+        return result;
+    }
+    stack1.push(root);
+    while (!stack1.empty()) {
+        root = stack1.pop();
+        stack2.push(root);
+        if (root.left != null) {
+            stack2.push(root.left);
+        }
+        if (root.right != null) {
+            stack2.push(root.right);
+        }
+    }
+    while (!stack2.empty()) {
+        root = stack2.pop();
+        result.add(root.val);
+    }
+    return result;
+    
 ```
 2. Recursion
 ```
