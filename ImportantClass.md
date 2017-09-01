@@ -9,7 +9,7 @@ HashMap
 * remove(key)
 * size()
 
-HashSet
+HashSet(hashSet不能放入重复的元素)
 ----
 * add()
 * contains()
@@ -45,6 +45,7 @@ Queue
 * offer()
 * element() empty报错
 * remove() empty报错
+* size()
 
 Math
 ----
