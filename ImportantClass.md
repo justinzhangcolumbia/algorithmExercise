@@ -37,6 +37,15 @@ Stack
 * push()
 * search(Object)
 
+Queue
+----
+* isEmpty()
+* peek()  empty return null
+* poll() empty return null
+* offer()
+* element() empty报错
+* remove() empty报错
+
 Math
 ----
 * abs()
