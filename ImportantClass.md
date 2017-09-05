@@ -28,6 +28,7 @@ ArrayList
 * set(index, element)
 * size()
 * subList()
+* toArray()
 
 Stack
 ----
