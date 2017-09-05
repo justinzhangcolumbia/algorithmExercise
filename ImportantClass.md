@@ -17,7 +17,7 @@ HashSet(hashSet不能放入重复的元素)
 * remove()
 * size()
 
-ArrayList
+ArrayList(是可以添加null的element的，但是queue不行，所以arrayList有时可以替代queue进行使用)
 ----
 * add(e); add(index, e)
 * contains(object)
