@@ -1,6 +1,7 @@
 preorder traversal
 ---
 1. Non-Recursion
+记忆方法就是把最左边的点的右child和左child依次放入stack，必须先放右child，这样的话stack最上面是左child，先pop出来的是左child，preorder是一路往左走，走到底，再返回上来
 ```
 public List<Integer> preorderTraversal(TreeNode root) {
     Stack<TreeNode> stack = new Stack<TreeNode>();
