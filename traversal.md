@@ -47,6 +47,8 @@ private void traverse(TreeNode root, ArrayList<Integer> result) {
 inorder traversal
 ----
 1. Non-Recursion
+
+记忆方法是，inorder先要一路往左走，不记录这个过程中的点，走到底，记录第一个点，第二个while循环的作用就是走到整个tree的底部
 ```
 public ArrayList<Integer> inorderTraversal(TreeNode root) {
     Stack<TreeNode> stack = new Stack<TreeNode>();
