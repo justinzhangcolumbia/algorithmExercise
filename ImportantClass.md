@@ -1,3 +1,30 @@
+String
+----
+* charAt()
+* compareTo()
+* concat(); +
+* equals()
+* indexOf()
+* length()
+* split()
+* substring()
+* toCharArray()
+* toLowerCase()
+* toUpperCase()
+* toString()
+* valueOf()
+
+StringBuilder
+----
+* append()
+* charAt()
+* delete(int startIndex, int endIndex)
+* deleteCharAt()
+* indexOf(str)
+* insert(int offset, str/char/boolean/int...)
+* length()
+* substring()
+* toString()
 
 HashMap
 ----
