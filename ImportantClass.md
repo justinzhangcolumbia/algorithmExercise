@@ -61,3 +61,12 @@ Integer
 ----
 * MIN_VALUE: -2147483648
 * MAX_VALUE: 2147483647
+
+数据类型之间的转换
+----
+* String --> int:     Integer.parseInt() (return int); Integer.valueOf() (return Integer)
+* other  --> String:  String.valueOf()
+* char   --> int:     Character.getNumericValue(); 'a' - '0'
+* int    --> char:    (char)
+* 判断String等价性要用equals而不能用==
+
