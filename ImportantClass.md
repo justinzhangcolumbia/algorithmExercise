@@ -6,7 +6,7 @@ String
 * equals()
 * indexOf()
 * length()
-* split()
+* split(), 返回值是String[]
 * substring()
 * toCharArray()
 * toLowerCase()
