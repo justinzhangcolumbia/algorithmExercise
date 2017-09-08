@@ -7,7 +7,7 @@ String
 * indexOf()
 * length()
 * split(), 返回值是String[]
-* substring()
+* substring(), substring(int beginIndex),可以定义一个参数也可以定义两个
 * toCharArray()
 * toLowerCase()
 * toUpperCase()
