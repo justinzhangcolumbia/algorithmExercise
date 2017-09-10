@@ -56,7 +56,7 @@ ArrayList(是可以添加null的element的，但是queue不行，所以arrayList
 * size()
 * subList()
 * toArray()
-交换arrayList的两个变量用set
+* 交换arrayList的两个变量用set
 ```
 int temp1 = nums.get(index1);
 int temp2 = nums.get(index2);
