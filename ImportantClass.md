@@ -103,3 +103,8 @@ Integer
 * int    --> char:    (char)
 * 判断String等价性要用equals而不能用==
 
+sort, reverse
+----
+* Arrays.sort()
+* Collections.reverse(List<?> list)
+* Collections.reverseOrder(Comparator<T> cmp)
