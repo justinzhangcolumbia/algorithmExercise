@@ -79,3 +79,12 @@
 问问公司未来打算朝哪个方向发展
 问问你加入公司之后，有哪些可以发挥才干的地方
 问问面试官之前在哪儿工作，然后问他和现在的工作相比如何
+
+--------------------------------------------------------------------------------
+北美IT公司大致分档
+第一档: Uber, Snapchat, Airbnb,  Pinterest, Slack
+第二档：Facebook, LinkedIn, Google, Twitter, Apple
+第三档: Square, Yelp, Netflix, Skype, VMWare, Salesforce, Groupon, Paypal
+, Evernote, Box.net, Quora, A9.com, 126Lab, Zynga, Palantir, Dropbox, Cloudera
+第四档: Oracle, EMC, eBay, Intuit, NetApp, NetSuite, Yahoo, Adobe, Autodesk, Symantec, Riverbed, Quantcast, Concur, Aster Data, Citrix, EA, TripAdvisor等
+算上湾区以外公司， Amazon, Micriosoft可以排在第三档次 Expedia, RedHat, RackSpace, Akamai, Bloomberg等可以排在第四档次。
