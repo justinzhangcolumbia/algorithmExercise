@@ -44,8 +44,50 @@ private void swap(int[] A, int i1, int i2) {
     A[i2] = temp;
 }
 ```
-
-
+Quick Select
+----
+找到第K个大的数字，时间复杂度是O(n)
+如果用heap的话，时间复杂度是O(nlogk)
+```
+public int kthLargestElement(int k, int[] nums) {
+    // write your code here
+    if (nums == null || nums.length == 0) {
+        return 0;
+    }
+    return quickSelect(nums, 0, nums.length - 1, nums.length - k);
+}
+private int quickSelect(int[] nums, int start, int end, int k) {
+    if (start == end) {
+        return nums[start];
+    }
+    int left = start;
+    int right = end;
+    int pivot = nums[(start + end) / 2];
+    while (left <= right) {
+        while (left <= right && nums[left] < pivot) {
+            left++;
+        }
+        while (left <= right && nums[right] > pivot) {
+            right--;
+        }
+        if (left <= right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+            right--;
+            left++;
+        }
+    }
+    if (right >= k) {
+        return quickSelect(nums, start, right, k);
+    } 
+    if (k >= left) {
+        return quickSelect(nums, left, end, k);
+    }
+    //这行很重要，如果上面的两个判断没有去return（left和right中间这个数刚好放在应该在的第i个大小），说明K出现在left和right中间，直接return left和right中间这个数字
+    return nums[k];
+}
+```
 Merge Sort
 ----
 * 时间复杂度是O(nlogn)，没有最好最坏
