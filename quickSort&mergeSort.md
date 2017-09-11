@@ -5,6 +5,44 @@ Quick Sort
 * 空间复杂度O(1), in place
 * 不具有稳定性
 ```
+public void sortIntegers2(int[] A) {
+    // Write your code here
+    if (A == null || A.length == 0) {
+        return;
+    }
+    quickSort(A, 0, A.length - 1);
+}
+private void quickSort(int[] A, int start, int end) {
+//如果不加最前面这段if判断语句，会造成stackOverFlow
+    if (start >= end) {
+        return;
+    }
+    int left = start;
+    int right = end;
+    int pivot = A[(start + end) / 2];
+    while (left <= right) {
+    //注意，left和right这里有等号，而A[left]和pivot这里没有等号，这里是避免了Corner case，比如全是1，如果有等号的话，一直是一个point在移动
+        while (left <= right && A[left] < pivot) {
+            left++;
+        }
+        //这里的while循环内部也要写等于号，已经left++, right--都会造成left可能大于right了
+        while (left <= right && A[right] > pivot) {
+            right--;
+        }
+        if (left <= right) {
+            swap(A, left, right);
+            left++;
+            right--;
+        }
+    }
+    quickSort(A, start, right);
+    quickSort(A, left, end);
+}
+private void swap(int[] A, int i1, int i2) {
+    int temp = A[i1];
+    A[i1] = A[i2];
+    A[i2] = temp;
+}
 ```
 
 
