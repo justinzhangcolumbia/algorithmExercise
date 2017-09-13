@@ -89,6 +89,7 @@ Math
 * sqrt()
 * power(x, y) x的y次方
 * random() [0.0 1.0)
+* log()
 
 Integer
 ----
