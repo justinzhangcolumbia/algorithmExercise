@@ -1,3 +1,5 @@
+注意输出结果形势是什么？是要求index？还是要求是否存在？注意处理两个数字相等的情况（4+4=8）
+----
 2sum(unsorted)
 ----
 * HashMap, if there is no two numbers' sum is target, return {0, 0}
