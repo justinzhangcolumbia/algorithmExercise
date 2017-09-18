@@ -88,3 +88,9 @@
 , Evernote, Box.net, Quora, A9.com, 126Lab, Zynga, Palantir, Dropbox, Cloudera
 第四档: Oracle, EMC, eBay, Intuit, NetApp, NetSuite, Yahoo, Adobe, Autodesk, Symantec, Riverbed, Quantcast, Concur, Aster Data, Citrix, EA, TripAdvisor等
 算上湾区以外公司， Amazon, Micriosoft可以排在第三档次 Expedia, RedHat, RackSpace, Akamai, Bloomberg等可以排在第四档次。
+
+--------------------------------------------------
+ascii码（八位，一共127种）：
+数字0~9： 48~57
+字母A~Z： 65~90
+字母a~z： 97~122
