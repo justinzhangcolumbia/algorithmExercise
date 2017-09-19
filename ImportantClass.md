@@ -13,7 +13,7 @@ String
 * toUpperCase()
 * toString()
 * valueOf()
-* contains()  可以检查一个string里面是否包含一个substring（例如abc里面是否包含bc）
+* contains()  可以检查一个string里面是否包含一个substring（例如abc里面是否包含bc, 如果用来检查是否含有某个character用indexOf来检查，返回-1就是不含有
 * replace(char target, char replacement) replace所有的
 * replaceAll(String target, String replacement)
 * replaceFirst(String target, String replacement) 只replace第一个。
