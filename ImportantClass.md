@@ -13,6 +13,10 @@ String
 * toUpperCase()
 * toString()
 * valueOf()
+* contains()  可以检查一个string里面是否包含一个substring（例如abc里面是否包含bc）
+* replace(char target, char replacement) replace所有的
+* replaceAll(String target, String replacement)
+* replaceFirst(String target, String replacement) 只replace第一个。
 
 StringBuilder
 ----
