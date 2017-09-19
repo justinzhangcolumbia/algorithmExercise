@@ -56,6 +56,8 @@ ArrayList(是可以添加null的element的，但是queue不行，所以arrayList
 * indexOf(Object)
 * isEmpty()
 * remove(index); remove(Object)
+* removeRange(int startIndex, int toIndex)
+* removeAll(Collection)
 * set(index, element)
 * size()
 * subList()
