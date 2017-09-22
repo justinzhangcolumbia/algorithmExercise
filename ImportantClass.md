@@ -1,5 +1,6 @@
 String
 ----
+在做DFS时，String不用进行deep copy,因为每次string + 操作都是产生一个新的string
 * charAt()
 * compareTo()
 * concat(); +
@@ -20,6 +21,7 @@ String
 
 StringBuilder
 ----
+在做DFS的时候必须要进行deep copy，因为stringbuilder在append的时候不会产生新的object
 * append()
 * charAt()
 * delete(int startIndex, int endIndex)
