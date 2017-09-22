@@ -24,12 +24,12 @@ StringBuilder
 在做DFS的时候必须要进行deep copy，因为stringbuilder在append的时候不会产生新的object
 * append()
 * charAt()
-* delete(int startIndex, int endIndex)
+* delete(int startIndex, int endIndex) 返回的是stringbuilder
 * deleteCharAt()
 * indexOf(str)
 * insert(int offset, str/char/boolean/int...)
 * length()
-* substring()
+* substring()返回的是string
 * toString()
 
 HashMap
