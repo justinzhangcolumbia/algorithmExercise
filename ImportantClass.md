@@ -1,6 +1,7 @@
 String
 ----
 在做DFS时，String不用进行deep copy,因为每次string + 操作都是产生一个新的string
+string是不可以被替换的，只能产生一个新的string，然后所有的string都会被放在一个string pool里面，再有重复的就不会创建新的string
 * charAt()
 * compareTo()
 * concat(); +
