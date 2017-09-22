@@ -1,7 +1,7 @@
 String
 ----
-在做DFS时，String不用进行deep copy,因为每次string + 操作都是产生一个新的string
-string是不可以被替换的，只能产生一个新的string，然后所有的string都会被放在一个string pool里面，再有重复的就不会创建新的string
+### 在做DFS时，String不用进行deep copy,因为每次string + 操作都是产生一个新的string.
+### string是不可以被替换的，只能产生一个新的string，然后所有的string都会被放在一个string pool里面，再有重复的就不会创建新的string, 比如String a = a + "123"; 这样的话就会产生一个新的string，而不是覆盖a的值
 * charAt()
 * compareTo()
 * concat(); +
@@ -22,7 +22,7 @@ string是不可以被替换的，只能产生一个新的string，然后所有�
 
 StringBuilder
 ----
-在做DFS的时候必须要进行deep copy，因为stringbuilder在append的时候不会产生新的object
+### 在做DFS的时候必须要进行deep copy，因为stringbuilder在append的时候不会产生新的object
 * append()
 * charAt()
 * delete(int startIndex, int endIndex) 返回的是stringbuilder
