@@ -90,6 +90,18 @@ Queue
 * remove() empty报错
 * size()
 
+PriorityQueue
+----
+* add()
+* clear()
+* contains(Object)
+* offer()
+* peek()
+* poll()
+* remove(Object)
+* size()
+* toArray();
+
 Math
 ----
 * abs()
