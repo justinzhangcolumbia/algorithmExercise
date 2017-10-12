@@ -52,6 +52,7 @@ HashSet(hashSet不能放入重复的元素)
 * remove()
 * size()
 * clear()
+* iterator().next() 得到hashSet的一个元素
 
 ArrayList(是可以添加null的element的，但是queue不行，所以arrayList有时可以替代queue进行使用)
 ----
