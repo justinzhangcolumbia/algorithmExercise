@@ -137,3 +137,4 @@ sort, reverse
 get the random index
 ----
 int randomIndex = new Random().nextInt(list.size());
+这里的bound必须是正的
