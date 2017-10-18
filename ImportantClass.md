@@ -126,6 +126,7 @@ Integer
 * other  --> String:  String.valueOf()
 * char   --> int:     Character.getNumericValue(); 'a' - '0'
 * int    --> char:    (char)
+* char[] --> String:  String.valueOf()
 * 判断String等价性要用equals而不能用==
 
 sort, reverse
