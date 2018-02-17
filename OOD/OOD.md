@@ -19,9 +19,7 @@
    - With the restaurant example, we may have following actions:
      - a Party walks into the restaurant and a Guest requests a Table from the Host.
      - The Host looks up the Reservation and if it exists, assigns the Party to a Table. Otherwisr, the Party is added to the end of the list.
-     - When a party leaves, the Table is freed and assigned to a new Party in the list.
-         
-         
+     - When a party leaves, the Table is freed and assigned to a new Party in the list. 
       
       
 ## Desing pattern
