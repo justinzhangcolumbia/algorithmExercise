@@ -59,12 +59,20 @@
     * 利用定义的Core Object, 列举出每个Object对应产生的use case。
     * 每个use case只需要先用一句简单的话来描述即可。
 * Classes: 通过类图的方式， 具体填充题目中涉及的类。
-  * 定义：
- 
-  
-  | Class Name |
-  |     ---    |
-  | Attributes |
-  | Functions  |
-  
+  * 定义：class Name + attributes (instance variable) + functions (method).
+  * 为什么要有类图：
+    * 可交付， Minimal Viable Product
+    * 节省时间， 不容易在Coding上挣扎
+    * 建立在Use case上， 和之前的步骤层层递进， 条例清晰， 便于交流和修改
+    * 如果时间允许/面试官要求， 便于转化成Code
+  * 如何画类图：
+    * 遍历你所列出的use cases
+    * 对于每一个use case， 更加详细的᧿述这个use case在做什么事情（例如： take external request -> ElevatorSystem takes an external request, and decide to push this request to an appropriate elevator）
+    * 针对这个描述， 在已有的Core objects里填充进所需要的信息
 * Correctness: 检查自己的设计， 是否满足关键点。
+  * Validate use cases (检查是否支持所有的use case)
+  * Follow good practice (面试当中的加分项， 展现一个程序员的经验)
+    * 继承
+    * handle exception
+  * S.O.L.I.D
+  * Design Pattern
