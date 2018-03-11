@@ -59,6 +59,12 @@
     * 利用定义的Core Object, 列举出每个Object对应产生的use case。
     * 每个use case只需要先用一句简单的话来描述即可。
 * Classes: 通过类图的方式， 具体填充题目中涉及的类。
-  * 定义：
+  * 定义：
+ 
   
+  | Class Name |
+  |     ---    |
+  | Attributes |
+  | Functions  |
+  
 * Correctness: 检查自己的设计， 是否满足关键点。
