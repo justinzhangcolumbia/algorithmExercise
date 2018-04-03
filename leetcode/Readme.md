@@ -7,3 +7,6 @@
 
 
 ### 2017/04/03:
+* [62.Unique Paths](62.UniquePaths.md)
+* [63.Unique Paths II](63.UniquePathsII.md)
+* [64.Minimum Path Sum](64.MinimumPathSum.md)
