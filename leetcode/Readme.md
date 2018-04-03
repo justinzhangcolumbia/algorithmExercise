@@ -1,3 +1,4 @@
 ## Practice
 
 ### 2017/04/02:
+[6.ZigZag Conversion](6.ZigZag Conversion.md)
