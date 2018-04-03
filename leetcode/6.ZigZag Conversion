@@ -1,1 +1,59 @@
 
+# 6. ZigZag Conversion
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+```
+P   A   H   N
+A P L S I I G
+Y   I   R
+```
+And then read line by line: "PAHNAPLSIIGYIR"
+* Hint; the right definition of ZigZig pattern:
+```
+/*n=numRows
+Δ=2n-2    1                           2n-1                         4n-3
+Δ=        2                     2n-2  2n                    4n-4   4n-2
+Δ=        3               2n-3        2n+1              4n-5       .
+Δ=        .           .               .               .            .
+Δ=        .       n+2                 .           3n               .
+Δ=        n-1 n+1                     3n-3    3n-1                 5n-5
+Δ=2n-2    n                           3n-2                         5n-4
+*/
+```
+
+### Solution 1:
+一开始想到的解法是先把string按照要求存入matrix，然后按照行读取。
+占用O(n)的额外空间，n是指string的长度。时间复杂度也是O(n).
+```
+class Solution {
+    public String convert(String s, int numRows) {
+        if (numRows == 0) {
+            return "";
+        }
+        if (numRows == 1) {
+            return s;
+        }
+        StringBuilder[] data = new StringBuilder[numRows];
+        for (int i = 0; i < numRows; i++) {
+            data[i] = new StringBuilder();
+        }
+        int index = 0;
+        int len = s.length();
+        while (index < s.length()) {
+            for (int i = 0; index < len && i < numRows; i++) {
+                data[i].append(s.charAt(index++));
+            }
+            for (int i = numRows - 2; index < len && i >= 1; i--) {
+                data[i].append(s.charAt(index++));
+            }
+        }
+        StringBuilder result = new StringBuilder();
+        for (StringBuilder sb : data) {
+            result.append(sb);
+        }
+        return result.toString();
+    }
+}
+```
+
+### Solution 2:
+感觉最优肯定是要没有额外空间的使用，所以就要寻找规律，如何能直接在string中按照zigzag后的行输出
