@@ -10,3 +10,8 @@
 * [62.Unique Paths](62.UniquePaths.md)
 * [63.Unique Paths II](63.UniquePathsII.md)
 * [64.Minimum Path Sum](64.MinimumPathSum.md)
+
+
+### 2017/04/04:
+* [36.ValidSudoku](36.ValidSudoku.md)
+* [51.N-Queens](51.N-Queens.md)
