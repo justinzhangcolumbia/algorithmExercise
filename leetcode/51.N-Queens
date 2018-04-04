@@ -1,0 +1,89 @@
+# 51. N-Queens
+The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
+
+Given an integer n, return all distinct solutions to the n-queens puzzle.
+
+Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
+
+For example,
+There exist two distinct solutions to the 4-queens puzzle:
+
+```
+[
+ [".Q..",  // Solution 1
+  "...Q",
+  "Q...",
+  "..Q."],
+
+ ["..Q.",  // Solution 2
+  "Q...",
+  "...Q",
+  ".Q.."]
+]
+```
+* PS: attack指的是横着或者竖着或者斜线都能attack
+
+## Solution 1:
+* 用DFS + backtrack做，首先n * n的格子，要把n个queen都放进去，而且互相不attack，那么每行必定又一个queen，每列也必定又一个queen，
+那么思路就是每行都需要找到一个位置放置queen，如果有好几个位置可以放，那就DFS，如果某一行开始放置不了了，那么就backtracking回去，
+重新其他的可能。需要用一个array记录column的使用情况，用两个set记录两个方向的斜线的情况。
+* 空间复杂度是O(n), 时间复杂度？？？
+```
+public List<List<String>> solveNQueens(int n) {
+    List<List<String>> results = new ArrayList<>();
+    if (n == 0) {
+        return results;
+    }
+    List<String> sub = new ArrayList<>();
+    int[] col = new int[n];
+    Set<Integer> dia1 = new HashSet<>();
+    Set<Integer> dia2 = new HashSet<>();
+    helper(n, results, sub, 0, col, dia1, dia2);
+    return results;
+}
+private void helper(int n, 
+                 List<List<String>> results, 
+                 List<String> sub, 
+                 int rowIndex,
+                 int[] col,
+                 Set<Integer> dia1,
+                 Set<Integer> dia2) {
+    if (rowIndex == n) {
+        results.add(new ArrayList<String>(sub));
+        return;
+    }
+    boolean isExist = false;
+    for (int i = rowIndex; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (col[j] == 0 && !dia1.contains(j + i) && !dia2.contains(j - i)) {
+                isExist = true;
+                String line = createString(n, j);
+                sub.add(line);
+                col[j] = 1;
+                dia1.add(j + i);
+                dia2.add(j - i);
+                helper(n, results, sub, i + 1, col, dia1, dia2);
+                sub.remove(sub.size() - 1);
+                col[j] = 0;
+                dia1.remove(j + i);
+                dia2.remove(j - i);
+                isExist = false;
+            } 
+        }
+        if (!isExist) {
+            return;
+        }
+    }
+}
+private String createString(int n, int j) {
+    StringBuilder result = new StringBuilder();
+    for (int i = 0; i < n; i++) {
+        if (i != j) {
+            result.append('.');
+        } else {
+            result.append('Q');
+        }
+    }
+    return result.toString();
+}
+```
