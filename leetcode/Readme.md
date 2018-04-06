@@ -15,3 +15,7 @@
 ### 2017/04/04:
 * [36.ValidSudoku](36.ValidSudoku.md)
 * [51.N-Queens](51.N-Queens.md)
+
+### 2017/04/05:
+[66.PlusOne](66.PlusOne.md)
+[72.EditDistance](72.EditDistance.md)
