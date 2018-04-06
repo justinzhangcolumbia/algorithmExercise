@@ -21,9 +21,10 @@
 * [72.EditDistance](72.EditDistance.md)
 
 ### 2017/04/06:
-* []()
-* []()
-* []()
+* [69.Sqrt(x)](69.Sqrt(x).md)
+* [71.SimplifyPath](71.SimplifyPath.md)
+* [72.EditDistance](72.EditDistance.md)
+* [74.SearchA2DMatrix](74.SearchA2DMatrix.md)
 
 ### 2017/04/07:
 * []()
