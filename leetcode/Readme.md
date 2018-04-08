@@ -27,9 +27,8 @@
 * [74.SearchA2DMatrix](74.SearchA2DMatrix.md)
 
 ### 2017/04/07:
-* []()
-* []()
-* []()
+* [82. Remove Duplicates from Sorted List II](82.RemoveDuplicatesfromSortedListII.md)
+* [83. Remove Duplicates from Sorted List](83.RemoveDuplicatesfromSortedList.md)
 
 ### 2017/04/08:
 * []()
