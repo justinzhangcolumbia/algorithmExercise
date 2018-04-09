@@ -21,7 +21,7 @@
 * [82. Remove Duplicates from Sorted List II](82.RemoveDuplicatesfromSortedListII.md), [83. Remove Duplicates from Sorted List](83.RemoveDuplicatesfromSortedList.md)
 
 ### 2017/04/08:
-* [](), [](), []()
+* [44.Wildcard Matching](44.WildcardMatching.md), [80.RemoveDuplicatesfromSortedArrayII](80.RemoveDuplicatesfromSortedArrayII.md), [86.PartitionList](86.PartitionList.md)
 
 ### 2017/04/09:
 * [](), [](), []()
