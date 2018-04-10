@@ -24,7 +24,7 @@
 * [44.Wildcard Matching](44.WildcardMatching.md), [80.RemoveDuplicatesfromSortedArrayII](80.RemoveDuplicatesfromSortedArrayII.md), [86.PartitionList](86.PartitionList.md)
 
 ### 2017/04/09:
-* [](), [](), []()
+* [95.UniqueBinarySearchTreesII](95.UniqueBinarySearchTreesII.md), [96.UniqueBinarySearchTrees](96.UniqueBinarySearchTrees.md)
 
 ### 2017/04/10:
 * [](), [](), []()
