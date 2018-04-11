@@ -27,7 +27,7 @@
 * [95.UniqueBinarySearchTreesII](95.UniqueBinarySearchTreesII.md), [96.UniqueBinarySearchTrees](96.UniqueBinarySearchTrees.md)
 
 ### 2017/04/10:
-* [](), [](), []()
+* [89.GrayCode](89.GrayCode.md), [118.Pascal'sTriangle](118.Pascal'sTriangle.md)
 
 ### 2017/04/11:
 * [](), [](), []()
