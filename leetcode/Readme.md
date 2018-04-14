@@ -32,11 +32,8 @@
 ### 2018/04/11:
 * [119.Pascal'sTriangleII](119.Pascal'sTriangleII.md), [120.Triangle](120.Triangle.md), [125.ValidPalindrome](125.ValidPalindrome.md)
 
-### 2018/04/12:
-* [](), [](), []()
-
 ### 2018/04/13:
-* [](), [](), []()
+* [161.OneEditDistance](161.OneEditDistance.md)
 
 ### 2018/04/14:
 * [](), [](), []()
