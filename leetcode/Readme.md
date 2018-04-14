@@ -36,7 +36,7 @@
 * [161.OneEditDistance](161.OneEditDistance.md)
 
 ### 2018/04/14:
-* [](), [](), []()
+* [131.PalindromePartitioning](131.PalindromePartitioning.md), [131.PalindromePartitioning](131.PalindromePartitioning.md), [647.PalindromicSubstrings](647.PalindromicSubstrings.md)
 
 ### 2018/04/15:
 * [](), [](), []()
